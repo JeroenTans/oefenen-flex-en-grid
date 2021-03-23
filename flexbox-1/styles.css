@@ -10,7 +10,7 @@ body {
     background-color: hsl(35, 40%, 95%);
     border-radius: 4px;
     display: flex;
-    max-width: 1200px;
+    flex-wrap: wrap;
 
 }
 
@@ -19,13 +19,32 @@ body {
     border: 1px solid hsl(35, 40%, 78%);
     border-radius: 4px;
     box-shadow: 2px 2px 4px hsl(35, 40%, 78%);
-    margin: 8px;
-    padding: 15px;
+    margin: 16px;
+    padding: 32px;
 }
 
 #aside {
-    display: flex;
-    min-width: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 576px){
+    .container {
+        flex-flow: nowrap;
+        width: 1200px;
+    }
+
+    #aside {
+        flex-basis: 300px;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    #main {
+        flex-basis: 900px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
 }
 
 
