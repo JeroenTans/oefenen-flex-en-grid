@@ -1,0 +1,67 @@
+body {
+    background-color: hsl(212, 36%, 90%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 220px 220px 220px 220px 220px 220px 220px;
+    grid-template-areas:
+        "l l l 1"
+        "2 2 3 l"
+        "2 2 4 5"
+        "l l l l"
+        "l 6 7 7"
+        "8 9 7 7"
+        "10 l l l";
+    gap: 5px;
+    max-width: 900px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 43%, 65%);
+    color: white;
+}
+
+#one {
+    grid-area: 1;
+}
+
+#two {
+    grid-area: 2;
+}
+
+#three {
+    grid-area: 4;
+}
+
+#four {
+    grid-area: 4;
+}
+
+#five {
+    grid-area: 5;
+}
+
+#six {
+    grid-area: 6;
+}
+
+#seven {
+    grid-area: 7;
+}
+
+#eight {
+    grid-area: 8;
+}
+
+#nine {
+    grid-area: 9;
+}
+
+#ten {
+    grid-area: 10;
+}
