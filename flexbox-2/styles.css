@@ -1,0 +1,23 @@
+body {
+    color: hsl(211, 65%, 14%);
+    background-color: hsl(40, 88%, 97%);
+    font-family: Arial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    background-color: lightblue;
+    align-items: flex-end;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+
+}
