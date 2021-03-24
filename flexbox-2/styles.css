@@ -21,5 +21,17 @@ body {
     height: 350px;
     margin: 20px;
     padding: 20px;
+    min-width: 215px;
+}
 
+@media screen and (min-width: 576px) {
+    .container {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 758px){
+    .box {
+        max-width: 300px;
+    }
 }
