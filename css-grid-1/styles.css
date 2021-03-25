@@ -7,9 +7,9 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 200px 400px 150px;
     grid-template-areas:
-        "1 1 1 2 2 2"
-        "3 3 4 4 4 4"
-        "5 5 5 5 5 5";
+        "a a a b b b"
+        "c c d d d d"
+        "e e e e e e";
     gap: 16px;
 }
 
@@ -22,21 +22,21 @@ body {
 }
 
 #one {
-    grid-area: 1;
+    grid-area: a;
 }
 
 #two {
-    grid-area: 2;
+    grid-area: b;
 }
 
 #three {
-    grid-area: 3;
+    grid-area: c;
 }
 
 #four {
-    grid-area: 4;
+    grid-area: d;
 }
 
 #five {
-    grid-area: 5;
+    grid-area: e;
 }
